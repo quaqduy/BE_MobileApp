@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'src')));
 
 app.use(express.json());
 app.use(cors());
+app.use('/',(req,res)=>res.send("Welcome to Mobile Backend!!!"));
 app.use('/',authentication);
 app.use('/',termManagament);
 app.use('/',subjectManagament);
